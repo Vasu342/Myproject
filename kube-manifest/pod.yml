@@ -1,0 +1,11 @@
+# pod manifest files for nginx
+apiversion: v1
+kind: pod
+metadata:
+  name: my-pod
+spec:
+  containers:
+    - name: c1
+      image: nginx
+      ports:
+        - containerport: 80
